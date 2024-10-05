@@ -23,8 +23,8 @@ const HomeScreen: React.FC = ({ navigation }) => {
             
             <View style={styles.container}>
                 <CustomButton
-                    //    onPress={()=>} 
-                    name={'Task-1  Convert Desgin To Code'}
+                       onPress={()=> navigation.navigate('SeasonScreen')} 
+                    name={'Task-1  Convert Design To Code'}
                     buttonStyle={{ margin: 10 }}
                 />
                 <CustomButton

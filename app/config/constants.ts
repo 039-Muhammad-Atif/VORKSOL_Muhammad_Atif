@@ -83,3 +83,36 @@ const contactArray = [
     },
   ]; 
   export default contactArray;
+
+  export let creatorArray = [
+    {
+      name: "Coscu",
+      status: true,
+      image: Images.coscu_image
+    },
+    {
+      name: "Rubius",
+      status: true,
+      image: Images.rubius_image
+    },
+    {
+      name: "Slakun10",
+      status: false,
+      image: Images.slakun10_image
+    },
+    {
+      name: "Slakun10",
+      status: false,
+      image: Images.slakun10_image
+    },
+    {
+      name: "Coscu",
+      status: false,
+      image: Images.coscu_image
+    },
+    {
+      name: "Rubius",
+      status: true,
+      image: Images.rubius_image
+    },
+  ]; 

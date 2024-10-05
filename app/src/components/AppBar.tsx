@@ -6,13 +6,15 @@ import { useNavigation } from '@react-navigation/native';
 
 interface AppBarProps{
     appBarContainer: StyleProp<ViewStyle>;
-    screenName: string;
     left: boolean;
+    centerIconImage: any;
+    screenName: string;
 }
 
 const AppBar: React.FC<AppBarProps> = ({
     appBarContainer,
     screenName,
+    centerIconImage,
     left,
 }) => {
 
@@ -30,7 +32,14 @@ const AppBar: React.FC<AppBarProps> = ({
                     />
                 </TouchableOpacity>:null}
             </View>
-            <View style={{ alignItems:'center'}}>
+            <View style={{ alignItems:'center',flexDirection:'row'}}>
+                { centerIconImage ? 
+                <Image
+                source={centerIconImage}
+                resizeMode='contain'
+                style={styles.centerIconStyle}
+                />:
+                null}
                 <Text style={styles.nameTextStyle}>{screenName}</Text>
             </View>
             <View style={{flex:1, alignItems:'flex-end'}}>
@@ -60,6 +69,10 @@ const styles = StyleSheet.create({
     leftIconStyle: {
         width: 16,
         height: 20,
+    },
+    centerIconStyle: {
+        width: 40,
+        height: 28,
     },
     nameTextStyle: {
         fontSize: 16,
