@@ -11,6 +11,7 @@ let Colors = {
   offlineBackground: '#312F37',
   offlineText: '#605D66',
   whiteText: '#FFFFFF',
+  lightPinkText: '#CDBEFF',
   discoverText:'#B29DFF',
   redText: '#FF0000',
   pinkBarColor: '#B94FC6',
